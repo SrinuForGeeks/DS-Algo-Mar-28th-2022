@@ -11,11 +11,13 @@ class MountainArrayProblem {
         //walkUp 
         while(index < n-1)
         {
-            if(arr[index] >= arr[index+1])
+            if(arr[index] < arr[index+1])
             {
-              break;
+              index++;
+            }else
+            {
+                break;
             }
-            index++;
         }
       
         
@@ -28,11 +30,14 @@ class MountainArrayProblem {
         // walkDown
         while(index < n-1)
         {
-            if(arr[index] <= arr[index+1])
+            if(arr[index] > arr[index+1])
+            {
+               index++; 
+            }else
             {
                 break;
             }
-            index++;
+            
         }
         
         return index == n-1;

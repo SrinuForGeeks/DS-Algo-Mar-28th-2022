@@ -34,13 +34,19 @@ class FindDuplicateNumber
 		int n = nums.length ;
 		for(int i = 0 ; i < n ; i++)
 		{
+			/* Always take the absolute value from the array, 
+			   as we are updating input array */
 			int value  = Math.abs(nums[i]);
+
+			/* If the value is repeated , for the 2nd time  nums[value] 
+			 would be -ve */
 			if( nums[value] < 0)
 			{
 				duplicate = value;
 				break;
 			}
 
+			//First time just make it as -ve
 			nums[value] = -nums[value];
 		}
 

@@ -1,4 +1,8 @@
 class Median {
+    /*
+        Time Complexity : O(n)
+        Space Complexity : O(n)
+    */
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         
         int[] arr = compareAndMerge(nums1, nums2);

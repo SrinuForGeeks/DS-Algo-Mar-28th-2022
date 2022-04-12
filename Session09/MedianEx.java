@@ -1,7 +1,7 @@
 class Median {
     /*
-        Time Complexity : O(n)
-        Space Complexity : O(n)
+        Time Complexity : O(m+n)
+        Space Complexity : O(m+n)
     */
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         

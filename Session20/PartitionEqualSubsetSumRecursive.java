@@ -1,4 +1,8 @@
 class  PartitionEqualSubsetSum {
+	/*
+	Time Complexity  : O(2^n)
+	Space Complexity : O(n)
+	*/
     public boolean canPartition(int[] nums) {
         
         int sum = 0;
